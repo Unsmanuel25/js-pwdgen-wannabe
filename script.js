@@ -9,3 +9,23 @@ console.log('JS OK');
 6-stampo il messaggio in pagina
 */
 
+// # fase preparatoria
+const myDivElement = document.getElementById('myDiv');
+console.log(myDivElement)
+
+// # fase raccolta dati
+const firstName = window.prompt('Dimmi il tuo nome', 'Manuel');
+const lastName = window.prompt('Dimmi il tuo cognome', 'Prisco');
+const color = window.prompt('Dimmi il tuo colore preferito', 'Nero');
+
+// # fase lavorazione dati
+
+const fullName = `${firstName}` `${lastName}`;
+const message = `${fullName}` `${color}`;
+
+// # fase di prduzione output
+
+myDiv.innerText = message;
+
+
+
