@@ -14,18 +14,17 @@ const myDivElement = document.getElementById('myDiv');
 console.log(myDivElement)
 
 // # fase raccolta dati
-const firstName = window.prompt('Dimmi il tuo nome', 'Manuel');
-const lastName = window.prompt('Dimmi il tuo cognome', 'Prisco');
-const color = window.prompt('Dimmi il tuo colore preferito', 'Nero');
+const firstName = prompt('Dimmi il tuo nome', 'Manuel');
+const lastName = prompt('Dimmi il tuo cognome', 'Prisco');
+const color = prompt('Dimmi il tuo colore preferito', 'Nero');
+console.log(firstName, lastName, color);
 
 // # fase lavorazione dati
-
-const fullName = `${firstName}` `${lastName}`;
-const message = `${fullName}` `${color}`;
+const password = firstName + lastName + color + '21';
+console.log(password)
 
 // # fase di prduzione output
-
-myDiv.innerText = message;
+resultElement.innerText += `<i>${password}</i>`;
 
 
 
